@@ -53,6 +53,22 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+    - family: TT Norms Pro
+      fonts:
+#        - asset: assets/fonts/TT-Norms-Pro-Thin.otf
+#          weight: 100
+#        - asset: assets/fonts/TT-Norms-Pro-Light.otf
+#          weight: 300
+        - asset: assets/fonts/TT-Norms-Pro-Regular.otf
+#          weight: 400
+#        - asset: assets/fonts/TT-Norms-Pro-Medium.otf
+#          weight: 500
+        - asset: assets/fonts/TT-Norms-Pro-Bold.otf
+#          style: bold
+          weight: 700
+#        - asset: assets/fonts/TT-Norms-Pro-Black.otf
+#          weight: 900
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -65,7 +81,9 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   assets:
-    - assets/images/
+    - assets/images/logo.png
+    - assets/images/fruit-basket-welcome-screen.png
+    - assets/images/fruit-basket-welcome-screen-ellipse.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
