@@ -29,18 +29,6 @@ class welcomeScreen extends StatelessWidget {
                             fit: BoxFit.contain,
                           ),
                         ),
-                        child: Container(
-                          margin: EdgeInsets.fromLTRB(0, 240, 0, 0),
-                          width: 180,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/fruit-basket-welcome-screen-ellipse.png"),
-                              fit: BoxFit.contain,
-                            ),
-                          ),
-                        ),
                       ),
                     ),
                     Container(
