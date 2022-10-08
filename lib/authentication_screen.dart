@@ -70,6 +70,7 @@ class authenticationScreen extends StatelessWidget {
                           ),
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
+                              elevation: 0,
                               minimumSize: Size(100, 50),
                               textStyle: TextStyle(
                                 color: Colors.white,
@@ -77,7 +78,7 @@ class authenticationScreen extends StatelessWidget {
                                 fontFamily: "TT Norms Pro",
                                 fontWeight: FontWeight.w500,
                               ),
-                              backgroundColor: Colors.orange,
+                              backgroundColor: Color(0xFFFFA451),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
                               ),

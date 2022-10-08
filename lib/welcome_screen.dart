@@ -64,6 +64,7 @@ class welcomeScreen extends StatelessWidget {
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               minimumSize: Size(100, 50),
+                              elevation: 0,
                               textStyle: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,
