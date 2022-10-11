@@ -1,3 +1,4 @@
+import 'package:desafio_sprint_2/authentication_screen.dart';
 import 'package:flutter/material.dart';
 
 class welcomeScreen extends StatelessWidget {
@@ -62,23 +63,30 @@ class welcomeScreen extends StatelessWidget {
                             height: 30,
                           ),
                           ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              minimumSize: Size(100, 50),
-                              elevation: 0,
-                              textStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontFamily: "TT Norms Pro",
-                                fontWeight: FontWeight.w500,
+                              style: ElevatedButton.styleFrom(
+                                minimumSize: Size(100, 50),
+                                elevation: 0,
+                                textStyle: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontFamily: "TT Norms Pro",
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                backgroundColor: Colors.orange,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
                               ),
-                              backgroundColor: Colors.orange,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                            ),
-                            child: Text("Let's Continue"),
-                            onPressed: () => print("alo, mamae!"), //teste
-                          ),
+                              child: Text("Let's Continue"),
+                              onPressed: () => {
+                                    Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            authenticationScreen(),
+                                      ),
+                                    ),
+                                  }),
                         ],
                       ),
                     ),

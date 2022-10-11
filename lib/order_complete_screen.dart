@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:desafio_sprint_2/home_screen.dart';
 
 class orderCompleteScreen extends StatelessWidget {
   const orderCompleteScreen({super.key});
@@ -73,7 +74,7 @@ class orderCompleteScreen extends StatelessWidget {
                         elevation: 0,
                         fixedSize: Size(190, 50),
                         textStyle: TextStyle(
-                          color: Color(0xFFFFA451),
+                          color: Colors.orange,
                           fontSize: 16,
                           fontFamily: "TT Norms Pro",
                           fontWeight: FontWeight.w500,
@@ -84,7 +85,14 @@ class orderCompleteScreen extends StatelessWidget {
                         ),
                       ),
                       child: Text("Continue Shopping"),
-                      onPressed: () => print("alo, mamae!"), //teste
+                      onPressed: () => {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => homeScreen(),
+                          ),
+                        ),
+                      },
                     ),
                   ],
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:desafio_sprint_2/home_screen.dart';
 
 class authenticationScreen extends StatelessWidget {
   authenticationScreen({super.key});
@@ -75,24 +76,31 @@ class authenticationScreen extends StatelessWidget {
                               height: 25,
                             ),
                             ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                elevation: 0,
-                                minimumSize: Size(100, 50),
-                                textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontFamily: "TT Norms Pro",
-                                  fontWeight: FontWeight.w500,
+                                style: ElevatedButton.styleFrom(
+                                  elevation: 0,
+                                  minimumSize: Size(100, 50),
+                                  textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontFamily: "TT Norms Pro",
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  backgroundColor: Color(0xFFFFA451),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
                                 ),
-                                backgroundColor: Color(0xFFFFA451),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                              ),
-                              child: Text("Start Ordering"),
-                              onPressed: () =>
-                                  print(nameController.text), //teste
-                            ),
+                                child: Text("Start Ordering"),
+                                onPressed: () => {
+                                      print(
+                                          '$authenticationScreen.$nameController'),
+                                      Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => homeScreen(),
+                                        ),
+                                      )
+                                    }),
                           ],
                         ),
                       ),

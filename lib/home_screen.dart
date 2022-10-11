@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:desafio_sprint_2/authentication_screen.dart';
-import 'package:desafio_sprint_2/components/custom_chip.dart';
-import 'package:desafio_sprint_2/components/meal.dart';
-import 'package:desafio_sprint_2/components/meal_sqr.dart';
+import 'package:desafio_sprint_2/components/shadow_chip.dart';
+import 'package:desafio_sprint_2/components/card.dart';
+import 'package:desafio_sprint_2/components/card_sqr.dart';
 
 class homeScreen extends StatelessWidget {
   const homeScreen({super.key});
@@ -30,7 +30,7 @@ class homeScreen extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width * .50,
                         child: Text(
-                          'Welcome, Matheus Lopes Cunha', // TESTE, REMOVER PELA VARIAVEL DA TELA DE AUTH
+                          'Welcome, $authenticationScreen.nameController.text', // TESTE, REMOVER PELA VARIAVEL DA TELA DE AUTH
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                               color: Color(0xFF27214D),
@@ -128,6 +128,7 @@ class homeScreen extends StatelessWidget {
                   child: Text(
                     'Recommended Combo',
                     style: TextStyle(
+                        fontFamily: 'TT Norms Pro',
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                         color: Color(0xFF27214D)),
@@ -207,6 +208,7 @@ class homeScreen extends StatelessWidget {
                       Text(
                         'Hottest',
                         style: TextStyle(
+                            fontFamily: 'TT Norms Pro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                             color: Color(0xFF27214D)),
@@ -214,6 +216,7 @@ class homeScreen extends StatelessWidget {
                       Text(
                         'Popular',
                         style: TextStyle(
+                            fontFamily: 'TT Norms Pro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                             color: Color(0xFF253F66)),
@@ -221,6 +224,7 @@ class homeScreen extends StatelessWidget {
                       Text(
                         'New Combo',
                         style: TextStyle(
+                            fontFamily: 'TT Norms Pro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                             color: Color(0xFF253F66)),
