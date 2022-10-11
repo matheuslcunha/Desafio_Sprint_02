@@ -1,7 +1,8 @@
+import 'package:desafio_sprint_2/add_to_basket_screen.dart';
 import 'package:flutter/material.dart';
 
-class mealSqr extends StatelessWidget {
-  mealSqr(
+class meal extends StatelessWidget {
+  meal(
       {Key? key,
       required this.mealPrice,
       required this.mealImage,
@@ -16,7 +17,7 @@ class mealSqr extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 150,
+          height: 180,
           width: 150,
           decoration: BoxDecoration(
             color: Colors.white,
@@ -33,14 +34,19 @@ class mealSqr extends StatelessWidget {
                 ),
               ),
               Align(
-                alignment: Alignment(0.99, 1),
+                alignment: Alignment(0.99, 0.96),
                 child: IconButton(
                   icon: Icon(
                     Icons.circle,
                     color: Color(0xFFFFF2E7),
                   ),
                   onPressed: () {
-                    print('Alo, mamae!');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: ((context) => addToBasketScreen()),
+                      ),
+                    );
                   },
                 ),
               ),
@@ -59,8 +65,8 @@ class mealSqr extends StatelessWidget {
                     children: [
                       Center(
                         child: Container(
-                          height: 75,
-                          width: 75,
+                          height: 100,
+                          width: 100,
                           child: Image.asset(
                             mealImage,
                             fit: BoxFit.contain,
@@ -69,13 +75,13 @@ class mealSqr extends StatelessWidget {
                       ),
                       SizedBox(height: 5),
                       Container(
-                        //color: Colors.amber,
                         width: constraints.maxWidth,
                         child: Text(
                           textAlign: TextAlign.center,
                           overflow: TextOverflow.ellipsis,
                           mealName,
                           style: TextStyle(
+                            fontFamily: 'TT Norms Pro',
                             fontSize: 14,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF27214D),

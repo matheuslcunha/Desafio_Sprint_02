@@ -16,6 +16,7 @@ class customChip extends StatelessWidget {
       label: Text(
         chipLabel,
         style: TextStyle(
+            fontFamily: 'TT Norms Pro',
             fontSize: 14,
             fontWeight: FontWeight.w400,
             color: Color(0xFF333333)),
