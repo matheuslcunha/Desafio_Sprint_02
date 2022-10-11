@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_2/authentication_screen.dart';
+import 'package:desafio_sprint_2/screens/authentication_screen.dart';
 import 'package:desafio_sprint_2/components/shadow_chip.dart';
 import 'package:desafio_sprint_2/components/card.dart';
 import 'package:desafio_sprint_2/components/card_sqr.dart';

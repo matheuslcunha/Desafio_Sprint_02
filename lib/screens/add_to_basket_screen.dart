@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:desafio_sprint_2/components/bright_chip.dart';
-import 'package:desafio_sprint_2/order_complete_screen.dart';
+import 'package:desafio_sprint_2/screens/order_complete_screen.dart';
 
 class addToBasketScreen extends StatelessWidget {
   addToBasketScreen({super.key});

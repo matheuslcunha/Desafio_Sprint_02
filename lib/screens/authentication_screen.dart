@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_2/home_screen.dart';
+import 'package:desafio_sprint_2/screens/home_screen.dart';
 
 class authenticationScreen extends StatelessWidget {
   authenticationScreen({super.key});

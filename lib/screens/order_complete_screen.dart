@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_2/home_screen.dart';
+import 'package:desafio_sprint_2/screens/home_screen.dart';
 
 class orderCompleteScreen extends StatelessWidget {
   const orderCompleteScreen({super.key});

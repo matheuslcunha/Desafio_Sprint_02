@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_2/add_to_basket_screen.dart';
+import 'package:desafio_sprint_2/screens/add_to_basket_screen.dart';
 
 class mealSqr extends StatelessWidget {
   mealSqr(

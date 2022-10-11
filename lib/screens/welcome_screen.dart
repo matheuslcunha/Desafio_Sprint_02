@@ -1,4 +1,4 @@
-import 'package:desafio_sprint_2/authentication_screen.dart';
+import 'package:desafio_sprint_2/screens/authentication_screen.dart';
 import 'package:flutter/material.dart';
 
 class welcomeScreen extends StatelessWidget {
